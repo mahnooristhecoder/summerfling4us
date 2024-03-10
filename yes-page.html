@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <script>
+    function redirectToYesPage() {
+        // Replace 'yes-page.html' with the actual filename for the "Yes" option page
+        window.location.href = 'yes-page.html';
+    }
+
+    function moveNoOption() {
+        // Move the "No" option away from the cursor
+        var noButton = document.querySelector('#decision button:last-child');
+        noButton.style.position = 'absolute';
+        noButton.style.left = Math.random() * window.innerWidth + 'px';
+        noButton.style.top = Math.random() * window.innerHeight + 'px';
+    }
+    </script>
+<body>
+    <header>
+        <h1>Text me on insta with time and place for our first date</h1>
+    </header>
+    <main>
+        <section>
+            <section id="decision">
+             <h2>♥♥♥</h2>
+        </section>
+        <!-- You can add more sections as needed -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css.html">
+</head>
+<!-- Inside the <head> section of index.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    function redirectToYesPage() {
+        // Replace 'yes-page.html' with the actual filename for the "Yes" option page
+        window.location.href = 'yes-page.html';
+    }
+
+    function moveNoOption() {
+        // Move the "No" option away from the cursor
+        var noButton = document.querySelector('#decision .no-button');
+        noButton.style.position = 'absolute';
+        noButton.style.left = Math.random() * window.innerWidth + 'px';
+        noButton.style.top = Math.random() * window.innerHeight + 'px';
+        noButton.style.backgroundColor = 'red'; // Set background color to red dynamically
+    }
+</script>
+</head>
+<body>
+    <header>
+        <h1>will you be my summertime fling? </h1>
+    </header>
+    <main>
+        <section>
+            <p></p>
+            <!--♥♥♥
+<!-- Inside the <main> section -->
+            <section id="decision">
+            <h2 style="color: pink;"></h2>
+            <button onclick="redirectToYesPage()" class="yes-button">Yes</button>
+            <button onclick="moveNoOption()" class="no-button">No</button>
+        </section>
+
+        <!-- You can add more sections as needed -->
+    </main>
+    <footer>
+        <p>Yours Sincerely <3</p>
+    </footer>
+</body>
+</html>
